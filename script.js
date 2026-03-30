@@ -126,10 +126,10 @@ const stages = [
     {
         type: 'choice',
         title: '06: THE DATA PACKET',
-        text: 'Terminus is exfiltrating data. He needs the transfer to be <span class="highlight">guaranteed and error-free</span>, regardless of how long it takes. Speed is secondary to absolute integrity. <br><br>Which transport protocol did he choose for the final handshake?',
+        text: 'Terminus is exfiltrating data. He needs the transfer to be <span class="highlight">guaranteed and error-free</span>, regardless of how long it takes. Speed is secondary to absolute integrity. <br><br>Which transport protocol did he choose?',
         options: [
-            { label: 'UDP', value: 'UDP', icon: 'fa-bolt-lightning' },
-            { label: 'TCP', value: 'TCP', icon: 'fa-handshake' },
+            { label: 'UDP', value: 'UDP', icon: 'fa-circle-info' },
+            { label: 'TCP', value: 'TCP', icon: 'fa-circle-info' },
             { label: 'ICMP', value: 'ICMP', icon: 'fa-circle-info' }
         ],
         correct: 'TCP',
@@ -194,7 +194,7 @@ const stages = [
     {
         type: 'input',
         title: '13: THE COMPONENT TRACE',
-        text: 'The heist required a device consuming <span class="highlight">240 Watts</span> of power at exactly <span class="danger-text">12 Volts</span>. <br><br>In the scrap pile, we found three types of power rails: <br>1. 30 Amp Rails<br>2. 25 Amp Rails<br>3. 20 Amp Rails<br><br>Terminus always buys the <span class="highlight">exact</span> Amperage needed for the end goal (Amps = Watts / Volts). Which rail did he buy?',
+        text: 'The heist required a device consuming <span class="highlight">240 Watts</span> of power at exactly <span class="danger-text">12 Volts</span>. <br><br>In the scrap pile, we found three types of power rails: <br>1. 30 Amp Rails<br>2. 25 Amp Rails<br>3. 20 Amp Rails<br><br>Terminus always buys the <span class="highlight">exact</span> Amperage needed for the end goal. Which rail did he buy?',
         correct: '20',
         placeholder: 'ENTER AMPERAGE',
         hint: 'Divide the Power (240) by the Voltage (12) to find the Amp requirement.'
@@ -203,7 +203,7 @@ const stages = [
         type: 'input',
         title: '14: THE INTERROGATION',
         text: 'You caught him. Terminus smiles from the interrogation chair.<br><br><div class="clue-box">"My end goal was always to be caught by YOU. Because while you chased me here, my partner planted the final bomb exactly where this game began."</div><br>Where is the final bomb located?',
-        correct: 'Lelouch',
+        correct: 'LELOUCH',
         placeholder: 'ENTER LOCATION',
         hint: 'Look back at Puzzle 01. Where was the X?'
     },
